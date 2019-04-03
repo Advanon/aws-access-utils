@@ -1,7 +1,7 @@
 const AWS = require('./aws');
-const config = require('../config');
+const {isOffline, getLocalEndpointSes} = require('../config');
 
-const ses = config.isOffline() ? new AWS.SES({endpoint: config.getLocalEndpointSes()}) : new AWS.SES();
+const ses = isOffline() ? new AWS.SES({endpoint: getLocalEndpointSes()}) : new AWS.SES();
 
 const sendTemplatedEmail = async (request) => ses.sendTemplatedEmail(request).promise();
 

@@ -1,10 +1,10 @@
 const AWS = require('./aws');
-const config = require('../config');
+const {isOffline, getLocalRegion, getLocalEndpointStepFunctions} = require('../config');
 
 const options = {};
-if (config.isOffline()) {
-    options.region = config.getLocalRegion();
-    options.endpoint = config.getLocalEndpointStepFunctions();
+if (isOffline()) {
+    options.region = getLocalRegion();
+    options.endpoint = getLocalEndpointStepFunctions();
 }
 
 const stepFunctions = new AWS.StepFunctions(options);
