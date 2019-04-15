@@ -1,3 +1,5 @@
+[![Build Status](https://codebuild.eu-central-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiSjQ4YW1KYm9wT2pIOUdCaGorR2FSQks0c0hSUjhBSUJPVHZHajFHcWk2UlhRWWdJT0swTmFRK1NQaStwMEVXTlB1MTdSVGgwdzFEMGRuN2VtZllUZUdrPSIsIml2UGFyYW1ldGVyU3BlYyI6Im12L2dmVWVickFDdWFXQVQiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)](https://eu-central-1.console.aws.amazon.com/codesuite/codebuild/projects/codebuild-aws-acess-utils/history)
+
 # AWS access utils library
 This library wraps access to AWS services. All services are accessed with usage of AWS X-Ray.
 
