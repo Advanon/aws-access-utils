@@ -16,7 +16,7 @@ describe('httpUtils', () => {
         it('should export function', () => {
             expect(httpUtils.createErrorResponse).to.be.a('function');
         });
-        describe('on no status code', () => {
+        describe('on missing status code', () => {
             it('should throw exception', () => {
                 expect(() => {
                     httpUtils.createErrorResponse()
