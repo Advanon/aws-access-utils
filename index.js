@@ -1,10 +1,12 @@
-exports.logger = require('./src/logger');
-exports.httpUtils = require('./src/httpUtils');
-exports.config = require('./src/config');
-exports.aws = require('./src/aws/aws');
-exports.arn = require('./src/aws/arn');
-exports.dynamoDb = require('./src/aws/dynamodb');
-exports.lambda = require('./src/aws/lambda');
-exports.ses = require('./src/aws/ses');
-exports.sns = require('./src/aws/sns');
-exports.stepFunctions = require('./src/aws/stepFunctions');
+module.exports = {
+    logger: require('./src/logger'),
+    httpUtils: require('./src/httpUtils'),
+    config: require('./src/config'),
+    aws: require('./src/aws/aws'),
+    arn: require('./src/aws/arn'),
+    dynamoDb: require('./src/aws/dynamodb'),
+    lambda: require('./src/aws/lambda'),
+    ses: require('./src/aws/ses'),
+    sns: require('./src/aws/sns'),
+    stepFunctions: require('./src/aws/stepFunctions')
+};
