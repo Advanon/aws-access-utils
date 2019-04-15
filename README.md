@@ -2,7 +2,7 @@
 This library wraps access to AWS services. All services are accessed with usage of AWS X-Ray.
 
 # Installation
-`npm install aws-acesss-utils`
+`npm install aws-access-utils`
 
 # Usage
 Import module and start using it as specified in https://github.com/aws/aws-sdk-js
