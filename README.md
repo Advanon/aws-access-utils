@@ -21,6 +21,5 @@ For full list of functionality see `index.js`.
 This library provides also ways of accessing local instances of AWS services. Local access to AWS services is configured using environment variables. 
 If no environment variables are specified, default values are used. For more info see `/src/config.js`.  
 
-
 ## Testing this library
 To execute tests run `npm test`.
