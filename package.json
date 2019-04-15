@@ -1,7 +1,7 @@
 {
   "name": "aws-access-utils",
   "version": "1.0.0",
-  "description": "Library for accessing aws services",
+  "description": "Library for accessing AWS services",
   "main": "index.js",
   "scripts": {
     "test": "find ./test -name *.test.js | xargs mocha"
