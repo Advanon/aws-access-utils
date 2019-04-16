@@ -19,7 +19,7 @@
     "dynamodb",
     "xray"
   ],
-  "author": "Advanon",
+  "author": "Advanon AG",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Advanon/aws-access-utils/issues"
