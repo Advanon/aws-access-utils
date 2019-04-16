@@ -20,7 +20,7 @@
     "xray"
   ],
   "author": "Advanon AG",
-  "license": "ISC",
+  "license": "Apache License 2.0",
   "bugs": {
     "url": "https://github.com/Advanon/aws-access-utils/issues"
   },
