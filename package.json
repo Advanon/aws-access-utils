@@ -1,0 +1,37 @@
+{
+  "name": "aws-access-utils",
+  "version": "1.0.0",
+  "description": "Library for accessing AWS services",
+  "main": "index.js",
+  "scripts": {
+    "test": "find ./test -name *.test.js | xargs mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Advanon/aws-access-utils.git"
+  },
+  "keywords": [
+    "aws",
+    "node.js",
+    "javascript",
+    "lambda",
+    "library",
+    "dynamodb",
+    "xray"
+  ],
+  "author": "Advanon AG",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/Advanon/aws-access-utils/issues"
+  },
+  "homepage": "https://github.com/Advanon/aws-access-utils#readme",
+  "dependencies": {
+    "aws-sdk": "^2.434.0",
+    "aws-xray-sdk": "^2.2.0",
+    "pino": "^5.12.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  }
+}
