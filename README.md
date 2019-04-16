@@ -25,3 +25,14 @@ If no environment variables are specified, default values are used. For more inf
 
 ## Testing this library
 To execute tests run `npm test`.
+
+## Contributing
+Feedback, bug reports, and pull requests are welcome.
+
+For pull requests, make sure to follow the following guidelines:
+* Add tests for each new feature and bug fix.
+* Follow the existing code style, enforced by eslint.
+* Separate unrelated changes into multiple pull requests.
+
+## License
+Apache License 2.0, see [LICENSE](LICENSE.md).
