@@ -3,7 +3,9 @@ const {getLoggerName} = require('./config');
 
 const loggerOptions = {};
 if (getLoggerName()) {
-    loggerOptions.name = getLoggerName();
+    loggerOptions.base = {
+        appName: getLoggerName()
+    }
 }
 
 const logger = pino(loggerOptions);
