@@ -1,5 +1,5 @@
 const AWS = require('./aws');
-const {isOffline, getLocalRegion, getLocalEndpointDynamoDB} = require('../config');
+const { isOffline, getLocalRegion, getLocalEndpointDynamoDB } = require('../config');
 
 const options = {
     convertEmptyValues: true

@@ -1,4 +1,4 @@
-const {expect} = require('chai');
+const { expect } = require('chai');
 const httpUtils = require('../../src/httpUtils');
 
 describe('httpUtils', () => {
@@ -11,7 +11,7 @@ describe('httpUtils', () => {
         const status = 400;
         const error = Error('customMessage');
         error.name = 'CustomErrorName';
-        const options = {cors: true};
+        const options = { cors: true };
 
         it('should export function', () => {
             expect(httpUtils.createErrorResponse).to.be.a('function');
@@ -19,14 +19,14 @@ describe('httpUtils', () => {
         describe('on missing status code', () => {
             it('should throw exception', () => {
                 expect(() => {
-                    httpUtils.createErrorResponse()
+                    httpUtils.createErrorResponse();
                 }).to.throw();
             });
         });
         describe('on no error', () => {
             it('should throw exception', () => {
                 expect(() => {
-                    httpUtils.createErrorResponse(status)
+                    httpUtils.createErrorResponse(status);
                 }).to.throw();
             });
         });

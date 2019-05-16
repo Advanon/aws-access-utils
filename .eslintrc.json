@@ -27,6 +27,14 @@
       }
     ],
     "brace-style": "error",
+    "object-curly-spacing": [
+      2,
+      "always"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
     "quotes": [
       "error",
       "single"
