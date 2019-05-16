@@ -8,5 +8,6 @@ module.exports = {
     lambda: require('./src/aws/lambda'),
     ses: require('./src/aws/ses'),
     sns: require('./src/aws/sns'),
-    stepFunctions: require('./src/aws/stepFunctions')
+    stepFunctions: require('./src/aws/stepFunctions'),
+    lambdaUtils: require('./src/aws/lambdaUtils')
 };
