@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/Advanon/aws-access-utils#readme",
   "dependencies": {
-    "aws-sdk": "^2.450.0",
+    "aws-sdk": "^2.456.0",
     "aws-xray-sdk": "^2.3.3",
-    "pino": "^5.12.3"
+    "pino": "^5.12.4"
   },
   "devDependencies": {
     "chai": "^4.2.0",
