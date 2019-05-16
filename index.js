@@ -5,9 +5,7 @@ module.exports = {
     aws: require('./src/aws/aws'),
     arn: require('./src/aws/arn'),
     dynamoDb: require('./src/aws/dynamodb'),
-    lambda: require('./src/aws/lambda'),
     ses: require('./src/aws/ses'),
     sns: require('./src/aws/sns'),
-    stepFunctions: require('./src/aws/stepFunctions'),
-    lambdaUtils: require('./src/aws/lambdaUtils')
+    stepFunctions: require('./src/aws/stepFunctions')
 };

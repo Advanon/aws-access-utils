@@ -12,7 +12,6 @@ Import module and start using it as specified in https://github.com/aws/aws-sdk-
 List of wrapped AWS services
 - AWS
 - DynamoDb
-- Lambda
 - SES
 - SNS
 - StepFunctions
