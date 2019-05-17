@@ -36,4 +36,4 @@ const createErrorResponse = (statusCode, error, options) => {
     return response;
 };
 
-module.exports = {createErrorResponse, CORS_HEADERS};
+module.exports = { createErrorResponse, CORS_HEADERS };

@@ -1,5 +1,5 @@
 const AWS = require('./aws');
-const {isOffline, getLocalRegion, getLocalEndpointStepFunctions} = require('../config');
+const { isOffline, getLocalRegion, getLocalEndpointStepFunctions } = require('../config');
 
 const options = {};
 if (isOffline()) {
