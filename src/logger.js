@@ -1,11 +1,15 @@
 const pino = require('pino');
-const { getLoggerName } = require('./config');
+const { getLoggerName, isOffline } = require('./config');
 
 const loggerOptions = {};
 if (getLoggerName()) {
     loggerOptions.base = {
         appName: getLoggerName()
     };
+}
+
+if (isOffline()) {
+    loggerOptions.prettyPrint = { colorize: true };
 }
 
 const logger = pino(loggerOptions);
