@@ -1,6 +1,6 @@
 {
   "name": "aws-access-utils",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Library for accessing AWS services",
   "main": "index.js",
   "scripts": {
