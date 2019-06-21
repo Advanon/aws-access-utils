@@ -15,6 +15,7 @@ List of wrapped AWS services
 - SES
 - SNS
 - StepFunctions
+- SSM
 
 For full list of functionality see `index.js`.
 
