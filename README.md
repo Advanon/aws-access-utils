@@ -1,4 +1,4 @@
-[![Build Status](https://codebuild.eu-central-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiYTdnYThKaGFmYUxBYnp2QWc1eGcrSk5jSTNlemRsR2lVVlg5MThWYkU1SGtwTVVQTFZtUXhCS0kvZjlSZjBCNnluZ2NmTy9JTTZtblpDdEovTlBjR1RZPSIsIml2UGFyYW1ldGVyU3BlYyI6InFkNkhaVEFSK1ZVblJKUlIiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)](https://eu-central-1.console.aws.amazon.com/codesuite/codebuild/projects/global-dev-aws-access-utils-tf-pr-build)
+[![Build Status](https://codebuild.eu-central-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoidXhVQTNoUlMvRE03a2EwUTVldTVTWCtpcWRIKzRJcDJGc3h2OTJpVzFxa3NtNlhCTVpZR2ZQZXRKM0lZL1B1bEtCTTlWaU1wU1hxLzZJWVpTQkE4eXZRPSIsIml2UGFyYW1ldGVyU3BlYyI6ImF1dmk0K25mckpmb2xtdTYiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)](https://eu-central-1.console.aws.amazon.com/codesuite/codebuild/projects/global-dev-aws-access-utils-tf-pr-build)
 
 # AWS access utils library
 This library wraps access to AWS services. All services are accessed with usage of AWS X-Ray.
