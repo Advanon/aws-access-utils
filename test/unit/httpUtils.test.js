@@ -1,10 +1,9 @@
-const { expect } = require('chai');
 const httpUtils = require('../../src/httpUtils');
 
 describe('httpUtils', () => {
     describe('CORS_HEADERS', () => {
         it('should export object', () => {
-            expect(httpUtils.CORS_HEADERS).to.be.an('object');
+            expect(typeof httpUtils.CORS_HEADERS).toBe('object');
         });
     });
     describe('createErrorResponse', () => {
@@ -13,23 +12,22 @@ describe('httpUtils', () => {
         error.name = 'CustomErrorName';
         const options = { cors: true };
 
-        it('should export function', () => {
-            expect(httpUtils.createErrorResponse).to.be.a('function');
+        test('should export function', () => {
+            expect(typeof httpUtils.createErrorResponse).toBe('function');
         });
+
         describe('on missing status code', () => {
-            it('should throw exception', () => {
-                expect(() => {
-                    httpUtils.createErrorResponse();
-                }).to.throw();
+            test('should throw exception', () => {
+                expect(() => httpUtils.createErrorResponse()).toThrow();
             });
         });
+
         describe('on no error', () => {
-            it('should throw exception', () => {
-                expect(() => {
-                    httpUtils.createErrorResponse(status);
-                }).to.throw();
+            test('should throw exception', () => {
+                expect(() => httpUtils.createErrorResponse(status)).toThrow();
             });
         });
+
         describe('on no options', () => {
             let result = null;
 
@@ -37,17 +35,19 @@ describe('httpUtils', () => {
                 result = httpUtils.createErrorResponse(status, error);
             });
 
-            it('should return statusCode', () => {
-                expect(result.statusCode).to.eql(status);
+            test('should return statusCode', () => {
+                expect(result.statusCode).toEqual(status);
             });
-            it('should return error body', () => {
-                expect(result.body).to.be.a('string');
+
+            test('should return error body', () => {
+                expect(typeof result.body).toBe('string');
             });
-            it('should return error JSON body with parameters', () => {
+
+            test('should return error JSON body with parameters', () => {
                 const resultJson = JSON.parse(result.body);
-                expect(resultJson.error).to.be.true;
-                expect(resultJson.code).to.eql(error.name);
-                expect(resultJson.message).to.eql(error.message);
+                expect(resultJson.error).toBe(true);
+                expect(resultJson.code).toBe(error.name);
+                expect(resultJson.message).toBe(error.message);
             });
         });
 
@@ -58,8 +58,8 @@ describe('httpUtils', () => {
                 result = httpUtils.createErrorResponse(status, error, options);
             });
 
-            it('should return CORS header', () => {
-                expect(result.headers).to.eql(httpUtils.CORS_HEADERS);
+            test('should return CORS header', () => {
+                expect(result.headers).toBe(httpUtils.CORS_HEADERS);
             });
         });
     });
