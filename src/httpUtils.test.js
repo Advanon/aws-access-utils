@@ -1,4 +1,4 @@
-const httpUtils = require('../../src/httpUtils');
+const httpUtils = require('./httpUtils');
 
 describe('httpUtils', () => {
     describe('CORS_HEADERS', () => {
