@@ -8,5 +8,6 @@ module.exports = {
     dynamoDb: require('./src/aws/dynamodb'),
     ses: require('./src/aws/ses'),
     sns: require('./src/aws/sns'),
-    stepFunctions: require('./src/aws/stepFunctions')
+    stepFunctions: require('./src/aws/stepFunctions'),
+    lambda: require('./src/aws/lambda')
 };
