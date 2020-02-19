@@ -1,5 +1,5 @@
-const AWS = require('./aws');
-const ssm = new AWS.SSM();
+const { SSM } = require('./aws');
+const ssm = new SSM();
 
 const resolve = async (key) => {
     const { Parameter } = await ssm

@@ -12,6 +12,4 @@ if (isOffline()) {
     loggerOptions.prettyPrint = { colorize: true };
 }
 
-const logger = pino(loggerOptions);
-
-module.exports = logger;
+module.exports = pino(loggerOptions);
