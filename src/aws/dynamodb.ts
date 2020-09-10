@@ -18,7 +18,6 @@ const optionsLocal = {
   endpoint: getLocalEndpointDynamoDB()
 };
 
-// eslint-disable
 export default {
   doc: isOffline() ?
     new AWS.DynamoDB.DocumentClient(optionsLocal) :
