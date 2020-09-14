@@ -1,9 +1,13 @@
-const httpUtils = require('./httpUtils');
+import {
+    CORS_HEADERS,
+    createErrorResponse,
+    APIGatewayProxyResult
+} from './httpUtils';
 
 describe('httpUtils', () => {
     describe('CORS_HEADERS', () => {
         it('should export object', () => {
-            expect(typeof httpUtils.CORS_HEADERS).toBe('object');
+            expect(typeof CORS_HEADERS).toBe('object');
         });
     });
     describe('createErrorResponse', () => {
@@ -13,38 +17,26 @@ describe('httpUtils', () => {
         const options = { cors: true };
 
         test('should export function', () => {
-            expect(typeof httpUtils.createErrorResponse).toBe('function');
-        });
-
-        describe('on missing status code', () => {
-            test('should throw exception', () => {
-                expect(() => httpUtils.createErrorResponse()).toThrow();
-            });
-        });
-
-        describe('on no error', () => {
-            test('should throw exception', () => {
-                expect(() => httpUtils.createErrorResponse(status)).toThrow();
-            });
+            expect(typeof createErrorResponse).toBe('function');
         });
 
         describe('on no options', () => {
-            let result = null;
+            let result: APIGatewayProxyResult | null = null;
 
             beforeEach(() => {
-                result = httpUtils.createErrorResponse(status, error);
+                result = createErrorResponse(status, error);
             });
 
             test('should return statusCode', () => {
-                expect(result.statusCode).toEqual(status);
+                expect(result?.statusCode).toEqual(status);
             });
 
             test('should return error body', () => {
-                expect(typeof result.body).toBe('string');
+                expect(typeof result?.body).toBe('string');
             });
 
             test('should return error JSON body with parameters', () => {
-                const resultJson = JSON.parse(result.body);
+                const resultJson = JSON.parse(result?.body || '');
                 expect(resultJson.error).toBe(true);
                 expect(resultJson.code).toBe(error.name);
                 expect(resultJson.message).toBe(error.message);
@@ -52,14 +44,14 @@ describe('httpUtils', () => {
         });
 
         describe('on options provided', () => {
-            let result = null;
+            let result: APIGatewayProxyResult | null = null;
 
             beforeEach(() => {
-                result = httpUtils.createErrorResponse(status, error, options);
+                result = createErrorResponse(status, error, options);
             });
 
             test('should return CORS header', () => {
-                expect(result.headers).toBe(httpUtils.CORS_HEADERS);
+                expect(result?.headers).toBe(CORS_HEADERS);
             });
         });
     });

@@ -286,3 +286,5 @@ jspm_packages
 .vscode/
 .serverless-secrets.json
 .terragrunt-cache/
+
+/dist

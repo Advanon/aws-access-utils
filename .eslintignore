@@ -1,0 +1,11 @@
+/legacy
+/resources
+/build
+/.build
+/.serverless
+/.terragrunt-cache
+/node_modules
+/src/types
+/jest.config.js
+/dist
+*.test.ts
