@@ -1,6 +1,6 @@
 {
   "name": "@advanon-ag/aws-access-utils",
-  "version": "2.2.0",
+  "version": "2.2.2",
   "description": "Library for accessing AWS services",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,6 @@
     "pino-pretty": "^3.6.0"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.62",
     "@types/aws-sdk": "^2.7.0",
     "@types/jest": "^26.0.10",
     "@types/pino": "^6.3.0",

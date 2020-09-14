@@ -1,6 +1,8 @@
-import { APIGatewayProxyResult } from 'aws-lambda';
-
-import { CORS_HEADERS, createErrorResponse } from './httpUtils';
+import {
+    CORS_HEADERS,
+    createErrorResponse,
+    APIGatewayProxyResult
+} from './httpUtils';
 
 describe('httpUtils', () => {
     describe('CORS_HEADERS', () => {
