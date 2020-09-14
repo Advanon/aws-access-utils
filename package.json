@@ -1,5 +1,5 @@
 {
-  "name": "aws-access-utils",
+  "name": "@advanon-ag/aws-access-utils",
   "version": "2.2.0",
   "description": "Library for accessing AWS services",
   "main": "dist/index.js",
@@ -23,7 +23,7 @@
     "xray"
   ],
   "author": "Advanon AG",
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Advanon/aws-access-utils/issues"
   },
