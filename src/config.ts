@@ -23,3 +23,5 @@ export const getLocalEndpointStepFunctions = (): string =>
 export const getLocalEndpointSns = (): string => process.env.LOCAL_SNS_ENDPOINT || DEFAULT_LOCAL_ENDPOINT;
 
 export const getLocalEndpointSes = (): string => process.env.LOCAL_SES_ENDPOINT || DEFAULT_LOCAL_ENDPOINT;
+
+export const getLocalEndpointSsm = (): string => process.env.LOCAL_SSM_ENDPOINT || DEFAULT_LOCAL_ENDPOINT;
