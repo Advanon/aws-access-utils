@@ -1,7 +1,7 @@
 const DEFAULT_LOCAL_REGION = 'us-east-1';
 
 const DEFAULT_LOCAL_ENDPOINT = process.env.LOCALSTACK_HOSTNAME ?
-  `http://${process.env.LOCALSTACK_HOSTNAME}:4456` :
+  `http://${process.env.LOCALSTACK_HOSTNAME}:4566` :
   'http://localhost:4566';
 
 export const isOffline = (): boolean => !!process.env.IS_OFFLINE;
