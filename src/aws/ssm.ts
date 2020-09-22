@@ -1,6 +1,10 @@
 import AWS from './aws';
 
-const ssm = new AWS.SSM();
+import { isOffline, getLocalEndpointSsm, getLocalRegion } from '../config';
+
+const ssm = isOffline() ?
+  new AWS.SSM({ region: getLocalRegion(), endpoint: getLocalEndpointSsm() }) :
+  new AWS.SSM();
 
 export const resolve = async (key: string): Promise<string | undefined> => {
   const { Parameter } = await ssm
