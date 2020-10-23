@@ -1,6 +1,6 @@
 {
   "name": "@advanon-ag/aws-access-utils",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "description": "Library for accessing AWS services",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
