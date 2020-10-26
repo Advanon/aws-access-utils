@@ -6,6 +6,7 @@ export * as arn from './aws/arn';
 export * as ssm from './aws/ssm';
 export { default as dynamoDb } from './aws/dynamodb';
 export * as ses from './aws/ses';
+export * as sqs from './aws/sqs';
 export * as sns from './aws/sns';
 export { default as stepFunctions } from './aws/stepFunctions';
 export * as lambda from './aws/lambda';

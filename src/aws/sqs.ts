@@ -17,4 +17,4 @@ const optionsLocal = {
   endpoint: getLocalEndpointSqs(),
 };
 
-export const sns = new AWS.SQS(isOffline() ? optionsLocal : options);
+export const sqs = new AWS.SQS(isOffline() ? optionsLocal : options);
